@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background: #252533;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+
+.timer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #0e0d1d;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    border-right: 5px solid #db0038;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.time-sets{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+h2, h1, h3{
+    margin: 0;
+    text-align: center;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.timer-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vvb:nth-child(1){
+    margin-bottom: 2rem;
+}
+
+.vvb:last-child{
+    margin-top: 2rem;
+}
+
+main{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#decrease, #increase{
+    outline: none;
+    border: none;
+    background-color: #db0038;
+    color: white;
+    margin: 0 1rem;
+    border-radius: 50%;
+}
+
+#time-left{
+    font-size: 5rem;
+}
+
+#start_stop, #reset {
+    margin: 0;
+    background-color: #db0038;
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+
+.break{
+    animation: walkingColor .5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walkingColor {
+    0%{
+        background: rgb(219,0,56);
+        background: linear-gradient(90deg, rgba(219,0,56,1) 0%, rgba(255,255,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    10% {
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,0,56,1) 10%, rgba(255,255,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    20%{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,0,56,1) 20%, rgba(255,255,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    30%{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,0,56,1) 30%, rgba(255,255,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    40%{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,0,56,1) 40%, rgba(255,255,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,0,56,1) 50%, rgba(255,255,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    60%{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,0,56,1) 60%, rgba(255,255,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    70%{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,0,56,1) 70%, rgba(255,255,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    80%{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,0,56,1) 80%, rgba(255,255,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    90%{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,0,56,1) 90%, rgba(255,255,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(219,0,56,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+footer{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer a{
+    text-decoration: none;
+    color:#db0038;
+}
